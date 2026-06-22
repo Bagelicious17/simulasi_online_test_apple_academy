@@ -1,0 +1,212 @@
+QUESTIONS = {
+   "Section 1: Logic": [
+        # =============================================
+        # CATEGORY A: NUMBER SERIES (Pola Angka)
+        # =============================================
+        {"q": "Pola angka: 2, 4, 6, 8, 10, ?. Angka selanjutnya?", "options": ["11", "12", "13", "14"], "answer": "12", "explanation": "Pola penambahan sederhana: setiap angka bertambah 2."},
+        {"q": "Pola angka: 2, 4, 8, 14, ?, 30. Angka selanjutnya?", "options": ["20", "22", "24", "26"], "answer": "22", "explanation": "Selisih: +2, +4, +6, +8, +10. Jadi 14+8=22."},
+        {"q": "Pola angka: 1, 1, 2, 3, 5, 8, ?", "options": ["10", "11", "12", "13"], "answer": "13", "explanation": "Deret Fibonacci: setiap angka adalah jumlah dari dua angka sebelumnya. 5+8=13."},
+        {"q": "Pola: 3, 6, 12, 24, ?", "options": ["36", "40", "48", "50"], "answer": "48", "explanation": "Setiap angka dikali 2. 24×2=48."},
+        {"q": "Pola angka: 5, 10, 20, 40, ?", "options": ["60", "70", "80", "90"], "answer": "80", "explanation": "Setiap angka dikali 2. 40×2=80."},
+        {"q": "Pola angka: 1, 1, 2, 3, 5, ?", "options": ["6", "7", "8", "9"], "answer": "8", "explanation": "Deret Fibonacci: 3+5=8."},
+        {"q": "Lengkapi pola: 2, 6, 18, 54, ?", "options": ["108", "150", "162", "200"], "answer": "162", "explanation": "Setiap angka dikali 3. 54×3=162."},
+        {"q": "Pola angka: 3, 9, 27, ?", "options": ["54", "72", "81", "90"], "answer": "81", "explanation": "Setiap angka dikali 3. 27×3=81."},
+        {"q": "Pola angka: 100, 90, 80, 70, ?", "options": ["50", "55", "60", "65"], "answer": "60", "explanation": "Setiap angka berkurang 10. 70-10=60."},
+        {"q": "Pola: 100, 95, 85, 70, ?", "options": ["50", "55", "60", "65"], "answer": "50", "explanation": "Selisih: -5, -10, -15, -20. Jadi 70-20=50."},
+        {"q": "Pola angka: 58, 52, 46, 40, 34, ?", "options": ["26", "28", "30", "32"], "answer": "28", "explanation": "Setiap angka berkurang 6. 34-6=28."},
+        {"q": "Pola angka: 544, 509, 474, 439, ?", "options": ["404", "414", "420", "445"], "answer": "404", "explanation": "Setiap angka berkurang 35. 439-35=404."},
+        {"q": "Pola angka: 201, 202, 204, 207, ?", "options": ["205", "208", "210", "211"], "answer": "211", "explanation": "Selisih bertambah: +1, +2, +3, +4. Jadi 207+4=211."},
+        {"q": "Pola angka: 8, 22, 8, 28, 8, ?", "options": ["9", "29", "32", "34"], "answer": "34", "explanation": "Angka 8 muncul bergantian. Seri lain: 22, 28, 34 (tambah 6)."},
+        {"q": "Pola angka: 80, 10, 70, 15, 60, ?", "options": ["20", "25", "30", "50"], "answer": "20", "explanation": "Dua pola bergantian: 80,70,60 (kurang 10) dan 10,15,20 (tambah 5)."},
+        {"q": "Pola angka: 36, 34, 30, 28, 24, ?", "options": ["20", "22", "23", "26"], "answer": "22", "explanation": "Pola pengurangan bergantian: -2, -4, -2, -4. Jadi 24-2=22."},
+        {"q": "Pola angka: 22, 21, 23, 22, 24, 23, ?", "options": ["22", "24", "25", "26"], "answer": "25", "explanation": "Pola bergantian: -1, +2 berulang. 23+2=25."},
+        {"q": "Pola angka: 3, 4, 7, 8, 11, 12, ?", "options": ["7", "10", "14", "15"], "answer": "15", "explanation": "Pola +1, +3 bergantian. 12+3=15."},
+        {"q": "Pola angka: 1000, 200, 40, ?", "options": ["8", "10", "15", "20"], "answer": "8", "explanation": "Setiap angka dibagi 5. 40÷5=8."},
+        {"q": "Pola angka: 7, 10, 8, 11, 9, 12, ?", "options": ["7", "10", "12", "13"], "answer": "10", "explanation": "Dua pola bergantian: 7,8,9,10 (tambah 1) dan 10,11,12 (tambah 1)."},
+        {"q": "Pola angka: 14, 28, 20, 40, 32, 64, ?", "options": ["52", "56", "96", "128"], "answer": "56", "explanation": "Dua pola bergantian: ×2, lalu -8. 64-8=56."},
+        {"q": "Pola angka: 40, 40, 47, 47, 54, ?", "options": ["40", "44", "54", "61"], "answer": "54", "explanation": "Setiap angka diulang lalu tambah 7. Setelah 54 diulang."},
+        {"q": "Pola angka: 21, 9, 21, 11, 21, 13, ?", "options": ["14", "15", "21", "23"], "answer": "21", "explanation": "Angka 21 muncul bergantian. Seri lain: 9,11,13 (tambah 2). Setelah 13, ulang 21."},
+        {"q": "Pola angka: 53, 53, 40, 40, 27, 27, ?", "options": ["12", "14", "27", "53"], "answer": "14", "explanation": "Setiap angka diulang, lalu kurang 13. 27-13=14."},
+
+        # =============================================
+        # CATEGORY B: LETTER/PATTERN SERIES (Pola Huruf)
+        # =============================================
+        {"q": "Lengkapi pola: A, C, E, G, ?", "options": ["H", "I", "J", "K"], "answer": "I", "explanation": "Pola huruf melompat 1 (loncati B, D, F, H). Huruf selanjutnya I."},
+        {"q": "Pola huruf: B, E, H, K, ?", "options": ["M", "N", "O", "P"], "answer": "N", "explanation": "Setiap huruf melompat 3 posisi. K+3=N."},
+        {"q": "Pola huruf: QPO, NML, KJI, ?, EDC", "options": ["HGF", "CAB", "JKL", "GHI"], "answer": "HGF", "explanation": "Setiap grup adalah 3 huruf mundur berturut-turut, dimulai dari Q,N,K,H,E."},
+        {"q": "Pola huruf: JAK, KBL, LCM, MDN, ?", "options": ["OEP", "NEO", "MEN", "PFQ"], "answer": "NEO", "explanation": "Huruf pertama maju 1 (J,K,L,M,N), tengah maju 1 (A,B,C,D,E), ketiga maju 1 (K,L,M,N,O)."},
+        {"q": "Pola huruf: SCD, TEF, UGH, ?, WKL", "options": ["CMN", "UJI", "VIJ", "IJT"], "answer": "VIJ", "explanation": "Huruf pertama: S,T,U,V,W. Huruf kedua-ketiga maju 2 tiap step."},
+        {"q": "Pola huruf: BCB, DED, FGF, HIH, ?", "options": ["JKJ", "HJH", "IJI", "JHJ"], "answer": "JKJ", "explanation": "Huruf pertama & ketiga sama, urut alfabet meloncati 1. Tengah maju 1."},
+
+        # =============================================
+        # CATEGORY C: VERBAL CLASSIFICATION (Klasifikasi Kata)
+        # =============================================
+        {"q": "Manakah yang tidak termasuk kelompoknya?", "options": ["Swift", "Python", "Java", "HTML"], "answer": "HTML", "explanation": "Swift, Python, Java adalah bahasa pemrograman. HTML adalah bahasa markup."},
+        {"q": "Kata mana yang TIDAK termasuk kelompok yang sama? Leopard, Cougar, Elephant, Lion", "options": ["Leopard", "Cougar", "Elephant", "Lion"], "answer": "Elephant", "explanation": "Leopard, cougar, lion adalah keluarga kucing besar. Elephant bukan."},
+        {"q": "Kata mana yang TIDAK termasuk kelompok yang sama? Couch, Rug, Table, Chair", "options": ["Couch", "Rug", "Table", "Chair"], "answer": "Rug", "explanation": "Couch, table, chair adalah furnitur duduk/meja. Rug adalah pelapis lantai."},
+        {"q": "Kata mana yang TIDAK termasuk kelompok yang sama? Tulip, Rose, Bud, Daisy", "options": ["Tulip", "Rose", "Bud", "Daisy"], "answer": "Bud", "explanation": "Tulip, rose, daisy adalah jenis bunga. Bud (kuncup) bukan jenis bunga."},
+        {"q": "Kata mana yang TIDAK termasuk kelompok yang sama? Tire, Steering Wheel, Engine, Car", "options": ["Tire", "Steering Wheel", "Engine", "Car"], "answer": "Car", "explanation": "Tire, steering wheel, engine adalah bagian dari mobil. Car adalah keseluruhan."},
+        {"q": "Kata mana yang TIDAK termasuk kelompok yang sama? Parsley, Basil, Dill, Mayonnaise", "options": ["Parsley", "Basil", "Dill", "Mayonnaise"], "answer": "Mayonnaise", "explanation": "Parsley, basil, dill adalah bumbu herbal. Mayonnaise adalah saus."},
+        {"q": "Kata mana yang TIDAK termasuk kelompok yang sama? Noun, Preposition, Punctuation, Adverb", "options": ["Noun", "Preposition", "Punctuation", "Adverb"], "answer": "Punctuation", "explanation": "Noun, preposition, adverb adalah kelas kata. Punctuation bukan kelas kata."},
+        {"q": "Kata mana yang TIDAK termasuk kelompok yang sama? Cornea, Retina, Pupil, Vision", "options": ["Cornea", "Retina", "Pupil", "Vision"], "answer": "Vision", "explanation": "Cornea, retina, pupil adalah bagian mata. Vision adalah fungsi, bukan bagian."},
+        {"q": "Kata mana yang TIDAK termasuk kelompok yang sama? Unique, Beautiful, Rare, Exceptional", "options": ["Unique", "Beautiful", "Rare", "Exceptional"], "answer": "Beautiful", "explanation": "Unique, rare, exceptional adalah sinonim (luar biasa/langka). Beautiful bermakna berbeda."},
+        {"q": "Kata mana yang TIDAK termasuk kelompok yang sama? Biology, Chemistry, Theology, Zoology", "options": ["Biology", "Chemistry", "Theology", "Zoology"], "answer": "Theology", "explanation": "Biology, chemistry, zoology adalah ilmu alam/sains. Theology adalah studi agama."},
+        {"q": "Kata mana yang TIDAK termasuk kelompok yang sama? Inch, Ounce, Centimeter, Yard", "options": ["Inch", "Ounce", "Centimeter", "Yard"], "answer": "Ounce", "explanation": "Inch, centimeter, yard mengukur panjang. Ounce mengukur berat."},
+        {"q": "Kata mana yang TIDAK termasuk kelompok yang sama? Mayor, Lawyer, Governor, Senator", "options": ["Mayor", "Lawyer", "Governor", "Senator"], "answer": "Lawyer", "explanation": "Mayor, governor, senator adalah pejabat pemerintah. Lawyer bukan pejabat."},
+
+        # =============================================
+        # CATEGORY D: ESSENTIAL PART (Bagian Esensial)
+        # =============================================
+        {"q": "Sebuah 'book' (buku) tidak bisa ada tanpa...", "options": ["Paper", "Pages", "Pictures", "Learning"], "answer": "Pages", "explanation": "Buku harus memiliki halaman (pages). Gambar dan pembelajaran bersifat opsional."},
+        {"q": "Sebuah 'guitar' (gitar) tidak bisa ada tanpa...", "options": ["Band", "Teacher", "Songs", "Strings"], "answer": "Strings", "explanation": "Gitar harus memiliki senar (strings). Band, guru, lagu bersifat opsional."},
+        {"q": "Sebuah 'shoe' (sepatu) tidak bisa ada tanpa...", "options": ["Sole", "Leather", "Laces", "Walking"], "answer": "Sole", "explanation": "Sepatu harus memiliki sol. Kulit, tali, berjalan bersifat opsional."},
+        {"q": "'Respiration' (pernapasan) tidak bisa ada tanpa...", "options": ["Mouth", "Circulation", "Oxygen", "Carbon Monoxide"], "answer": "Oxygen", "explanation": "Pernapasan memerlukan oksigen. Mulut, sirkulasi, karbon monoksida bersifat opsional."},
+        {"q": "Sebuah 'election' (pemilu) tidak bisa ada tanpa...", "options": ["President", "Voter", "November", "Nation"], "answer": "Voter", "explanation": "Pemilu memerlukan pemilih (voter). Presiden, November, negara bersifat opsional."},
+        {"q": "'Swimming' (berenang) tidak bisa ada tanpa...", "options": ["Pool", "Bathing Suit", "Water", "Life Jacket"], "answer": "Water", "explanation": "Berenang memerlukan air. Kolam, baju renang, pelampung bersifat opsional."},
+        {"q": "Sebuah 'language' (bahasa) tidak bisa ada tanpa...", "options": ["Tongue", "Slang", "Writing", "Words"], "answer": "Words", "explanation": "Bahasa memerlukan kata-kata. Lidah, slang, tulisan bersifat opsional."},
+        {"q": "Sebuah 'hurricane' (badai) tidak bisa ada tanpa...", "options": ["Beach", "Cyclone", "Damage", "Wind"], "answer": "Wind", "explanation": "Badai memerlukan angin. Pantai, kerusakan bersifat opsional."},
+        {"q": "Sebuah 'recipe' (resep) tidak bisa ada tanpa...", "options": ["Desserts", "Directions", "Cookbook", "Utensils"], "answer": "Directions", "explanation": "Resep memerlukan petunjuk/arahan. Makanan penutup, buku resep bersifat opsional."},
+        {"q": "Sebuah 'wedding' (pernikahan) tidak bisa ada tanpa...", "options": ["Love", "Church", "Ring", "Marriage"], "answer": "Marriage", "explanation": "Pernikahan memerlukan ikatan perkawinan. Cinta, gereja, cincin bersifat opsional."},
+        {"q": "'Knowledge' (pengetahuan) tidak bisa ada tanpa...", "options": ["School", "Teacher", "Textbook", "Learning"], "answer": "Learning", "explanation": "Pengetahuan memerlukan proses belajar. Sekolah, guru, buku teks bersifat opsional."},
+        {"q": "Sebuah 'contract' (kontrak) tidak bisa ada tanpa...", "options": ["Agreement", "Document", "Written", "Attorney"], "answer": "Agreement", "explanation": "Kontrak memerlukan kesepakatan. Dokumen, tertulis, pengacara bersifat opsional."},
+
+        # =============================================
+        # CATEGORY E: VERBAL ANALOGIES (Analogi)
+        # =============================================
+        {"q": "Lengkapi analogi: Kertas : Kayu = Kain : ?", "options": ["Baju", "Kapas", "Benang", "Gunting"], "answer": "Kapas", "explanation": "Kertas terbuat dari kayu, kain terbuat dari kapas."},
+        {"q": "Cup : Coffee = Bowl : ?", "options": ["Dish", "Soup", "Spoon", "Food"], "answer": "Soup", "explanation": "Cup digunakan untuk minum kopi, bowl digunakan untuk makan soup."},
+        {"q": "Artist : Painting = Senator : ?", "options": ["Attorney", "Law", "Politician", "Constituents"], "answer": "Law", "explanation": "Artist membuat painting, senator membuat law (undang-undang)."},
+        {"q": "Careful : Cautious = Boastful : ?", "options": ["Arrogant", "Humble", "Joyful", "Suspicious"], "answer": "Arrogant", "explanation": "Careful dan cautious adalah sinonim, begitu juga boastful dan arrogant."},
+        {"q": "Secretly : Openly = Silently : ?", "options": ["Scarcely", "Impolitely", "Noisily", "Quietly"], "answer": "Noisily", "explanation": "Secretly dan openly adalah antonim, begitu juga silently dan noisily."},
+        {"q": "Yard : Inch = Quart : ?", "options": ["Gallon", "Ounce", "Milk", "Liquid"], "answer": "Ounce", "explanation": "Yard adalah satuan besar dari inch, quart adalah satuan besar dari ounce."},
+        {"q": "Elated : Despondent = Enlightened : ?", "options": ["Aware", "Ignorant", "Miserable", "Tolerant"], "answer": "Ignorant", "explanation": "Elated dan despondent adalah antonim, begitu juga enlightened dan ignorant."},
+        {"q": "Optimist : Cheerful = Pessimist : ?", "options": ["Gloomy", "Mean", "Petty", "Helpful"], "answer": "Gloomy", "explanation": "Optimist bersifat cheerful, pessimist bersifat gloomy."},
+        {"q": "Sponge : Porous = Rubber : ?", "options": ["Massive", "Solid", "Elastic", "Inflexible"], "answer": "Elastic", "explanation": "Sponge bersifat porous (berpori), rubber bersifat elastic (elastis)."},
+        {"q": "Pen : Poet = Needle : ?", "options": ["Thread", "Button", "Sewing", "Tailor"], "answer": "Tailor", "explanation": "Pen adalah alat poet (penyair), needle adalah alat tailor (penjahit)."},
+        {"q": "Odometer : Mileage = Compass : ?", "options": ["Speed", "Hiking", "Needle", "Direction"], "answer": "Direction", "explanation": "Odometer mengukur mileage (jarak tempuh), compass mengukur direction (arah)."},
+        {"q": "Conductor : Orchestra = Skipper : ?", "options": ["Jockey", "Hay", "Tractor", "Crew"], "answer": "Crew", "explanation": "Conductor memimpin orchestra, skipper memimpin crew (kru kapal)."},
+
+        # =============================================
+        # CATEGORY F: DEDUCTIVE LOGIC (Logika Deduktif)
+        # =============================================
+        {"q": "Jika semua programmer adalah manusia, dan sebagian manusia suka kopi, apakah semua programmer suka kopi?", "options": ["Ya", "Mungkin", "Tidak", "Tidak dapat ditentukan"], "answer": "Tidak", "explanation": "Hanya sebagian manusia suka kopi, jadi tidak bisa disimpulkan semua programmer suka kopi."},
+        {"q": "Semua laptop butuh listrik. MacBook adalah laptop. Jadi...", "options": ["MacBook tidak butuh listrik", "MacBook butuh listrik", "MacBook adalah komputer", "Semua salah"], "answer": "MacBook butuh listrik", "explanation": "Silogisme: Semua laptop butuh listrik + MacBook adalah laptop = MacBook butuh listrik."},
+        {"q": "Semua mahasiswa TI jago koding. Budi adalah mahasiswa TI. Budi tidak jago koding. Pernyataan ini...", "options": ["Benar", "Salah/Kontradiktif", "Budi bukan mahasiswa TI", "Budi jago desain"], "answer": "Salah/Kontradiktif", "explanation": "Kontradiksi: jika semua mahasiswa TI jago koding dan Budi mahasiswa TI, maka Budi pasti jago koding."},
+        {"q": "Jika beberapa dokter adalah musisi, dan semua musisi adalah kreatif. Maka...", "options": ["Semua dokter kreatif", "Beberapa dokter kreatif", "Tidak ada dokter kreatif", "Semua musisi adalah dokter"], "answer": "Beberapa dokter kreatif", "explanation": "Beberapa dokter = musisi, semua musisi = kreatif, jadi beberapa dokter kreatif."},
+        {"q": "Jika semua mawar adalah bunga, dan beberapa bunga cepat layu. Apakah mawar cepat layu?", "options": ["Ya", "Tidak", "Belum tentu", "Tidak mungkin"], "answer": "Belum tentu", "explanation": "Hanya beberapa bunga layu cepat, tidak bisa dipastikan mawar termasuk atau tidak."},
+        {"q": "Jika semua A adalah B, dan semua B adalah C, maka...", "options": ["Semua A adalah C", "Semua C adalah A", "Tidak bisa disimpulkan", "Semua B adalah A"], "answer": "Semua A adalah C", "explanation": "Silogisme transitif: A⊂B dan B⊂C, maka A⊂C."},
+        {"q": "Tanya lebih tua dari Eric. Cliff lebih tua dari Tanya. Eric lebih tua dari Cliff. Jika pernyataan 1 dan 2 benar, maka pernyataan 3...", "options": ["Benar", "Salah", "Tidak pasti"], "answer": "Salah", "explanation": "Cliff > Tanya > Eric, jadi Eric TIDAK lebih tua dari Cliff."},
+        {"q": "Blueberry lebih mahal dari strawberry. Blueberry lebih murah dari raspberry. Raspberry lebih mahal dari strawberry dan blueberry. Jika pernyataan 1-2 benar, maka pernyataan 3...", "options": ["Benar", "Salah", "Tidak pasti"], "answer": "Benar", "explanation": "Raspberry > Blueberry > Strawberry, jadi raspberry memang paling mahal."},
+        {"q": "Semua kantor di lt. 9 punya karpet. Tidak ada karpet berwarna pink. Tidak ada kantor di lt. 9 yang punya karpet pink. Jika pernyataan 1-2 benar, maka pernyataan 3...", "options": ["Benar", "Salah", "Tidak pasti"], "answer": "Benar", "explanation": "Jika tidak ada karpet yang pink, maka kantor lt. 9 juga tidak punya karpet pink."},
+        {"q": "Mara berlari lebih cepat dari Gail. Lily berlari lebih cepat dari Mara. Gail berlari lebih cepat dari Lily. Jika pernyataan 1-2 benar, maka pernyataan 3...", "options": ["Benar", "Salah", "Tidak pasti"], "answer": "Salah", "explanation": "Lily > Mara > Gail, jadi Gail TIDAK lebih cepat dari Lily."},
+        {"q": "Baterai X tahan lebih lama dari Y. Baterai Y tidak setahan baterai Z. Baterai Z tahan lebih lama dari X. Jika pernyataan 1-2 benar, maka pernyataan 3...", "options": ["Benar", "Salah", "Tidak pasti"], "answer": "Tidak pasti", "explanation": "X>Y dan Z>Y, tapi hubungan X dan Z tidak bisa ditentukan."},
+        {"q": "Suhu Senin lebih rendah dari Selasa. Suhu Rabu lebih rendah dari Selasa. Suhu Senin lebih tinggi dari Rabu. Jika pernyataan 1-2 benar, maka pernyataan 3...", "options": ["Benar", "Salah", "Tidak pasti"], "answer": "Tidak pasti", "explanation": "Selasa > Senin dan Selasa > Rabu, tapi hubungan Senin vs Rabu tidak bisa ditentukan."},
+        {"q": "Fact: Semua anjing suka berlari. Beberapa anjing suka berenang. Beberapa anjing mirip pemiliknya. Maka: Anjing yang suka berenang juga suka berlari.", "options": ["Benar", "Salah", "Tidak pasti"], "answer": "Benar", "explanation": "SEMUA anjing suka berlari, jadi subset yang suka berenang juga pasti suka berlari."},
+
+        # =============================================
+        # CATEGORY G: ARTIFICIAL LANGUAGE (Bahasa Buatan)
+        # =============================================
+        {"q": "granamelke = pohon besar, pinimelke = pohon kecil, melkehoon = rumah pohon. Mana yang berarti 'rumah besar'?", "options": ["granahoon", "pinishur", "pinihoon", "melkegrana"], "answer": "granahoon", "explanation": "grana=besar, melke=pohon, hoon=rumah. Rumah besar = grana+hoon."},
+        {"q": "moolokarn = langit biru, wilkospadi = balap sepeda, moolowilko = sepeda biru. Mana yang berarti 'mobil balap'?", "options": ["wilkozwet", "spadiwilko", "moolobreil", "spadivolo"], "answer": "spadivolo", "explanation": "moolo=biru, wilko=sepeda, spadi=balap, karn=langit. Mobil balap = spadi+volo(mobil)."},
+        {"q": "daftafoni = penasihat, imodafta = salah menasihati, imolokti = salah kelola. Mana yang berarti 'pernyataan'?", "options": ["kratafoni", "kratadafta", "loktifoni", "daftaimo"], "answer": "kratafoni", "explanation": "dafta=nasihat, foni=kata/pernyataan, imo=salah. Pernyataan = krata+foni."},
+        {"q": "dionot = pohon ek, blyonot = daun ek, blycrin = daun maple. Mana yang berarti 'sirup maple'?", "options": ["blymuth", "hupponot", "patricrin", "crinweel"], "answer": "crinweel", "explanation": "dio=pohon, not=ek, bly=daun, crin=maple. Sirup maple = crin+weel(sirup)."},
+        {"q": "morpirquat = rumah burung, beelmorpir = burung biru, beelclak = lonceng biru. Mana yang berarti 'tamu rumah'?", "options": ["morpirhunde", "beelmoki", "quathunde", "clakquat"], "answer": "quathunde", "explanation": "morpir=burung, quat=rumah, beel=biru, clak=lonceng. Tamu rumah = quat+hunde(tamu)."},
+        {"q": "jalkamofti = selamat ulang tahun, moftihoze = pesta ulang tahun, mentogunn = kebaikan. Mana yang berarti 'kebahagiaan'?", "options": ["jalkagunn", "mentohoze", "moftihoze", "hozemento"], "answer": "jalkagunn", "explanation": "jalka=bahagia/selamat, mofti=ulang tahun, gunn=sifat/-an, mento=baik. Kebahagiaan = jalka+gunn."},
+        {"q": "mallonpiml = lampu biru, mallontif = blueberry, arpantif = raspberry. Mana yang berarti 'mercusuar (lighthouse)'?", "options": ["tifmallon", "pimlarpan", "mallonarpan", "pimldoken"], "answer": "pimldoken", "explanation": "mallon=biru, piml=lampu/cahaya, tif=berry, arpan=rasp. Mercusuar = piml+doken(rumah)."},
+        {"q": "relftaga = bebas perawatan, otaga = hati-hati, fertaga = ceroboh perawatan. Mana yang berarti 'setelah perawatan'?", "options": ["zentaga", "tagafer", "tagazen", "relffer"], "answer": "tagazen", "explanation": "taga=perawatan/hati, relf=bebas, o=hati-hati, fer=ceroboh. Setelah perawatan = taga+zen(setelah)."},
+
+        # =============================================
+        # CATEGORY H: MATCHING DEFINITIONS & JUDGMENT
+        # =============================================
+        {"q": "Restitusi = kompensasi atas kerusakan properti. Mana contoh terbaik Restitusi?", "options": ["Jake meminjam kamera Lisa, lensa pecah, Jake bayar perbaikan", "Rebecca pinjam mobil tetangga, dikembalikan bensin hampir habis, hanya minta maaf", "Aaron menemukan pipa pecah di apartemen Tom, memanggil tukang", "Lisa curiga lubang di parkiran sebabkan ban kempes, minta bos bayar"], "answer": "Jake meminjam kamera Lisa, lensa pecah, Jake bayar perbaikan", "explanation": "Restitusi adalah kompensasi langsung. Jake merusak kamera dan membayar perbaikan."},
+        {"q": "Spekulasi = mengasumsikan sesuatu berdasarkan bukti yang tidak konklusif. Mana contoh terbaik?", "options": ["Francine baca handbook, pakai jeans di Casual Friday", "Mary macet 30 menit, berharap naik kereta", "Jennifer konsultasi guide book, yakin tentang tujuan wisata", "Emily buka pintu sambil menangis, Theo tebak ada keluarga meninggal"], "answer": "Emily buka pintu sambil menangis, Theo tebak ada keluarga meninggal", "explanation": "Theo membuat asumsi berdasarkan bukti tidak pasti (menangis bisa karena banyak alasan)."},
+        {"q": "Reentry = seseorang meninggalkan sistem sosialnya lalu kembali. Mana contoh terbaik?", "options": ["Jacob pindah restoran untuk gaji lebih tinggi", "Catherine kuliah di Prancis", "Malcolm menyesuaikan diri kembali setelah 2 tahun dinas militer", "Sharon putuskan berhenti berbagi apartemen"], "answer": "Malcolm menyesuaikan diri kembali setelah 2 tahun dinas militer", "explanation": "Malcolm meninggalkan sistem sosialnya (militer luar negeri) dan kembali ke kehidupan sipil."},
+        {"q": "Embellishing the Truth = menambahkan detail fiktif atau melebih-lebihkan fakta. Mana contoh terbaik?", "options": ["Isabel cerita ke rekan bahwa drama teater itu bagus", "Agen properti menggambarkan rumah 11 blok dari laut sebagai 'waterfront property'", "Fred yang mengajar 10 tahun bilang dia guru berpengalaman", "Pelatih bilang hanya pemain berbakat yang dapat beasiswa"], "answer": "Agen properti menggambarkan rumah 11 blok dari laut sebagai 'waterfront property'", "explanation": "Menggambarkan rumah 11 blok dari laut sebagai 'waterfront' adalah melebih-lebihkan."},
+        {"q": "Informal Gathering = sekelompok orang berkumpul secara santai. Mana contoh terbaik?", "options": ["Book club bertemu setiap Kamis pertama tiap bulan", "Setelah tahu promosi, Jeremy dan rekan pergi minum setelah kerja", "Mary kirim 25 undangan bridal shower", "Clara selalu kebetulan bertemu Peter di restoran"], "answer": "Setelah tahu promosi, Jeremy dan rekan pergi minum setelah kerja", "explanation": "Jeremy dan rekan spontan pergi minum — casual dan tidak direncanakan formal."},
+
+        # =============================================
+        # CATEGORY I: COMPLEX LOGIC PUZZLES
+        # =============================================
+        {"q": "Kereta bergerak 60 km/jam. Waktu tempuh untuk 180 km adalah...", "options": ["2 jam", "2.5 jam", "3 jam", "4 jam"], "answer": "3 jam", "explanation": "180 ÷ 60 = 3 jam."},
+        {"q": "Jika hari ini adalah Senin, maka 100 hari lagi adalah hari...", "options": ["Selasa", "Rabu", "Kamis", "Jumat"], "answer": "Rabu", "explanation": "100 ÷ 7 = 14 sisa 2. Senin + 2 hari = Rabu."},
+        {"q": "Umur Ayah 3 kali umur Anaknya. Jika umur Anak 15 tahun, berapa umur Ayah 5 tahun lagi?", "options": ["45", "50", "55", "60"], "answer": "50", "explanation": "Umur Ayah sekarang = 3×15 = 45. Lima tahun lagi = 45+5 = 50."},
+        {"q": "Andi lebih tua dari Budi. Cici lebih muda dari Budi. Siapa yang paling muda?", "options": ["Andi", "Budi", "Cici", "Tidak ada"], "answer": "Cici", "explanation": "Andi > Budi > Cici. Cici paling muda."},
+        {"q": "Jika 5 mesin menghasilkan 5 alat dalam 5 menit, berapa waktu 100 mesin untuk 100 alat?", "options": ["100 menit", "50 menit", "10 menit", "5 menit"], "answer": "5 menit", "explanation": "1 mesin = 1 alat per 5 menit. 100 mesin = 100 alat per 5 menit."},
+        {"q": "Manakah yang lebih berat: 1 kg Kapas atau 1 kg Besi?", "options": ["Kapas", "Besi", "Sama berat", "Tidak tahu"], "answer": "Sama berat", "explanation": "1 kg = 1 kg, berapapun volume bahannya."},
+        {"q": "Sebuah toko diskon 20%. Harga awal Rp 100.000. Berapa harga setelah diskon?", "options": ["Rp 70.000", "Rp 80.000", "Rp 90.000", "Rp 85.000"], "answer": "Rp 80.000", "explanation": "Diskon 20% = Rp 20.000. Harga akhir = 100.000 - 20.000 = 80.000."},
+        {"q": "Berapa banyak angka 9 antara 1 sampai 100?", "options": ["10", "11", "19", "20"], "answer": "20", "explanation": "Puluhan: 90-99 (10 angka 9). Satuan: 9,19,29,...,99 (10 angka 9). Total 20."},
+        {"q": "Jika p=3 dan q=4, maka nilai dari p² + q² adalah...", "options": ["7", "12", "25", "49"], "answer": "25", "explanation": "3² + 4² = 9 + 16 = 25."},
+        {"q": "Jika 1 orang bisa menyelesaikan pekerjaan dalam 10 hari, maka 2 orang butuh berapa hari?", "options": ["5", "10", "15", "20"], "answer": "5", "explanation": "Berbanding terbalik: 2 orang = 10/2 = 5 hari."},
+        {"q": "Jika harga 1 buku 5000, berapa harga 3 buku?", "options": ["10000", "15000", "20000", "25000"], "answer": "15000", "explanation": "3 × 5000 = 15000."},
+        {"q": "Jika 10 pekerja menyelesaikan pekerjaan dalam 2 hari, maka 5 pekerja butuh berapa hari?", "options": ["2", "3", "4", "5"], "answer": "4", "explanation": "Berbanding terbalik: 10×2 = 5×x, x = 4 hari."},
+        {"q": "Ada 5 orang mengantre. Eko di depan Dwi. Dwi di belakang Ani. Ani di belakang Budi. Siapa yang paling depan?", "options": ["Eko", "Dwi", "Ani", "Budi"], "answer": "Budi", "explanation": "Urutan dari depan: Budi > Ani > Eko > Dwi. Budi paling depan."},
+        {"q": "4 teman berbagi pizza, yang tertua dapat extra. Randy 2 bulan lebih tua dari Greg. Greg 3 bulan lebih muda dari Ned. Kent 1 bulan lebih tua dari Greg. Siapa dapat extra?", "options": ["Randy", "Greg", "Ned", "Kent"], "answer": "Ned", "explanation": "Ned > Randy > Kent > Greg. Ned paling tua."},
+        {"q": "Guru matematika baru dipilih berdasarkan senioritas. West < Temple, West > Brody. Rhodes > West, Rhodes < Temple. Temple tidak mau. Siapa ketua baru?", "options": ["Rhodes", "Temple", "West", "Brody"], "answer": "Rhodes", "explanation": "Urutan: Temple > Rhodes > West > Brody. Temple tolak, jadi Rhodes."},
+        {"q": "Henry di kursi 253. Marla di kanan Henry (254). George di kiri Henry. Inez di kiri George. Kursi berapa Inez?", "options": ["251", "254", "255", "256"], "answer": "251", "explanation": "George di kursi 252 (kiri Henry). Inez di kiri George = kursi 251."},
+    ],
+
+   "Section 2: Programming (Swift Focus)": [
+        {"q": "Output dari: let x = [1,2].map { $0 * 2 }", "options": ["[2, 4]", "[1, 2]", "[4, 2]", "Error"], "answer": "[2, 4]"},
+        {"q": "Cara mendeklarasikan variabel yang nilainya bisa berubah di Swift?", "options": ["let", "var", "const", "static"], "answer": "var"},
+        {"q": "Apa arti simbol '!' di belakang tipe data (misal String!)?", "options": ["Optional", "Implicitly Unwrapped Optional", "Force Close", "Error"], "answer": "Implicitly Unwrapped Optional"},
+        {"q": "Fungsi array.filter { $0 % 2 == 0 } akan menghasilkan?", "options": ["Angka ganjil", "Angka genap", "Semua angka", "Jumlah angka"], "answer": "Angka genap"},
+        {"q": "Manakah cara yang benar untuk menggabungkan string 'Hello' dan 'World' di Swift?", "options": ["'Hello' + 'World'", "'Hello' . 'World'", "'Hello' & 'World'", "concat('Hello', 'World')"], "answer": "'Hello' + 'World'"},
+        {"q": "Apa kegunaan dari 'guard statement' di Swift?", "options": ["Untuk melakukan perulangan", "Untuk keluar dari fungsi lebih awal jika kondisi tidak terpenuhi", "Untuk membuat class", "Untuk menghapus variabel"], "answer": "Untuk keluar dari fungsi lebih awal jika kondisi tidak terpenuhi"},
+        {"q": "Bagaimana cara mengecek jumlah elemen dalam array 'names'?", "options": ["names.length", "names.size", "names.count", "names.total"], "answer": "names.count"},
+        {"q": "Apa fungsi dari keyword 'return' dalam sebuah fungsi?", "options": ["Mengulang fungsi", "Menghentikan program", "Mengembalikan nilai ke pemanggil fungsi", "Mencetak teks ke konsol"], "answer": "Mengembalikan nilai ke pemanggil fungsi"},
+        {"q": "Manakah yang merupakan tipe data untuk angka desimal (presisi tinggi) di Swift?", "options": ["Int", "String", "Double", "Bool"], "answer": "Double"},
+        {"q": "Operator '??' (Nil-Coalescing Operator) digunakan untuk?", "options": ["Memberikan nilai default jika optional bernilai nil", "Mengalikan dua angka", "Membandingkan dua string", "Force unwrap variabel"], "answer": "Memberikan nilai default jika optional bernilai nil"},
+        {"q": "Apa output dari: print(5 / 2) jika keduanya adalah Integer?", "options": ["2.5", "2", "3", "Error"], "answer": "2"},
+        {"q": "Keyword yang digunakan untuk menghentikan sebuah loop secara paksa adalah...", "options": ["stop", "exit", "break", "halt"], "answer": "break"},
+        {"q": "Dalam Swift, 'String Interpolation' ditandai dengan simbol...", "options": ["${}", "{}", "\\()", "#()"], "answer": "\\()"},
+        {"q": "Manakah loop yang mengevaluasi kondisi di akhir perulangan?", "options": ["for-in", "while", "repeat-while", "foreach"], "answer": "repeat-while"},
+        {"q": "Tipe data yang hanya memiliki nilai true atau false adalah...", "options": ["Binary", "Boolean", "Logic", "Bit"], "answer": "Boolean"},
+        {"q": "Apa kegunaan dari keyword 'lazy' pada variabel di Swift?", "options": ["Membuat variabel lambat diakses", "Variabel hanya dihitung saat pertama kali dipanggil", "Menghapus variabel dari memori", "Membuat variabel menjadi konstanta"], "answer": "Variabel hanya dihitung saat pertama kali dipanggil"},
+        {"q": "Manakah koleksi di Swift yang tidak mengizinkan nilai duplikat?", "options": ["Array", "Dictionary", "Set", "Tuple"], "answer": "Set"},
+        {"q": "Apa output dari code: print(type(of: 5.0))?", "options": ["Int", "Float", "Double", "Number"], "answer": "Double"},
+        {"q": "Fungsi dari operator '===' (tiga sama dengan) adalah...", "options": ["Membandingkan nilai", "Memeriksa apakah dua referensi menunjuk ke instance class yang sama", "Memberikan nilai baru", "Memeriksa tipe data"], "answer": "Memeriksa apakah dua referensi menunjuk ke instance class yang sama"},
+        {"q": "Bagaimana cara menambahkan elemen baru ke akhir sebuah Array?", "options": ["array.add(item)", "array.push(item)", "array.append(item)", "array.insert(item)"], "answer": "array.append(item)"},
+        {"q": "Apa itu 'Tuple' di Swift?", "options": ["Tipe data untuk menyimpan satu nilai", "Grup berisi beberapa nilai dalam satu nilai majemuk", "Fungsi untuk melakukan looping", "Nama lain dari Class"], "answer": "Grup berisi beberapa nilai dalam satu nilai majemuk"},
+        {"q": "Keyword 'defer' digunakan untuk...", "options": ["Menjalankan kode tepat sebelum fungsi berakhir", "Menunda eksekusi aplikasi", "Membatalkan proses download", "Membuat fungsi baru"], "answer": "Menjalankan kode tepat sebelum fungsi berakhir"},
+        {"q": "Manakah cara benar untuk menulis komentar satu baris di Swift?", "options": ["# Komentar", "// Komentar", "/* Komentar", ""], "answer": "// Komentar"},
+        {"q": "Apa arti 'mutating' pada sebuah fungsi di dalam Struct?", "options": ["Fungsi tidak bisa dipanggil", "Fungsi diperbolehkan mengubah nilai properti di dalam struct", "Fungsi akan menghapus struct", "Fungsi hanya untuk tampilan"], "answer": "Fungsi diperbolehkan mengubah nilai properti di dalam struct"},
+        {"q": "Tipe data 'Any' di Swift berarti...", "options": ["Hanya bisa String", "Hanya bisa Integer", "Bisa mewakili instance dari tipe data apa pun", "Tidak boleh ada data"], "answer": "Bisa mewakili instance dari tipe data apa pun"}
+    ],
+
+   "Section 3: OOP": [
+        {"q": "Apa perbedaan utama Struct dan Class di Swift?", "options": ["Struct reference type, Class value type", "Struct value type, Class reference type", "Keduanya sama saja", "Struct bisa inheritance"], "answer": "Struct value type, Class reference type"},
+        {"q": "Konsep OOP yang menyembunyikan detail implementasi adalah...", "options": ["Inheritance", "Polymorphism", "Encapsulation", "Abstraction"], "answer": "Encapsulation"},
+        {"q": "Keyphrase 'override' digunakan untuk...", "options": ["Membuat fungsi baru", "Menimpa fungsi dari parent class", "Menghapus fungsi", "Menjalankan fungsi"], "answer": "Menimpa fungsi dari parent class"},
+        {"q": "Apa yang dimaksud dengan Inheritance (Pewarisan)?", "options": ["Kemampuan class untuk menurunkan sifat ke class lain", "Kemampuan menyembunyikan data", "Proses pembuatan objek", "Cara menghapus class"], "answer": "Kemampuan class untuk menurunkan sifat ke class lain"},
+        {"q": "Di Swift, sebuah class hanya bisa mewarisi dari berapa superclass?", "options": ["Satu", "Dua", "Tidak terbatas", "Tergantung RAM"], "answer": "Satu"},
+        {"q": "Apa kegunaan dari 'init' di dalam sebuah class Swift?", "options": ["Mengakhiri program", "Menghapus data", "Proses inisialisasi/persiapan nilai awal", "Menghubungkan ke database"], "answer": "Proses inisialisasi/persiapan nilai awal"},
+        {"q": "Polymorphism memungkinkan kita untuk...", "options": ["Menggunakan satu interface untuk berbagai tipe data", "Membuat class menjadi sangat besar", "Mengunci variabel agar tidak bisa diubah", "Mempercepat koneksi internet"], "answer": "Menggunakan satu interface untuk berbagai tipe data"},
+        {"q": "Manakah keyword yang digunakan agar sebuah class tidak bisa diwariskan lagi?", "options": ["static", "final", "private", "locked"], "answer": "final"},
+        {"q": "Apa perbedaan 'Property' dan 'Method' dalam sebuah objek?", "options": ["Property itu fungsi, Method itu data", "Property itu data/atribut, Method itu perilaku/fungsi", "Sama saja", "Property hanya untuk class"], "answer": "Property itu data/atribut, Method itu perilaku/fungsi"},
+        {"q": "Apa yang terjadi pada memory jika kita menggunakan 'Reference Type'?", "options": ["Data disalin ke variabel baru", "Kedua variabel menunjuk ke alamat memory yang sama", "Memory langsung penuh", "Data dihapus otomatis"], "answer": "Kedua variabel menunjuk ke alamat memory yang sama"},
+        {"q": "Apa yang dimaksud dengan 'Deinitializer' (deinit) di Swift?", "options": ["Fungsi untuk membuat objek", "Fungsi yang dipanggil tepat sebelum sebuah class instance dihapus dari memori", "Fungsi untuk menyalin data", "Fungsi untuk mengupdate UI"], "answer": "Fungsi yang dipanggil tepat sebelum sebuah class instance dihapus dari memori"},
+        {"q": "Manakah pernyataan yang benar tentang 'Computed Property'?", "options": ["Hanya menyimpan nilai statis", "Nilainya dihitung setiap kali properti tersebut diakses", "Sama dengan konstanta 'let'", "Hanya bisa digunakan di dalam class"], "answer": "Nilainya dihitung setiap kali properti tersebut diakses"},
+        {"q": "Konsep 'Abstraction' bertujuan untuk...", "options": ["Membuat kode jadi lebih panjang", "Menampilkan fungsionalitas penting dan menyembunyikan detail kompleksitas", "Menghubungkan aplikasi ke server", "Menghapus bug secara otomatis"], "answer": "Menampilkan fungsionalitas penting dan menyembunyikan detail kompleksitas"},
+        {"q": "Di Swift, apa kegunaan dari keyword 'super'?", "options": ["Membuat class menjadi super", "Mengakses method atau property dari parent class", "Mempercepat performa aplikasi", "Keluar dari aplikasi"], "answer": "Mengakses method atau property dari parent class"},
+        {"q": "Apa perbedaan antara 'Static Method' dan 'Instance Method'?", "options": ["Static dipanggil pada class itu sendiri, Instance dipanggil pada objek hasil cetakan class", "Instance lebih cepat dari Static", "Static hanya untuk angka", "Tidak ada perbedaan"], "answer": "Static dipanggil pada class itu sendiri, Instance dipanggil pada objek hasil cetakan class"},
+        {"q": "Apa kegunaan dari 'Protocol' di Swift?", "options": ["Sebagai blueprint untuk method atau property yang harus diimplementasikan", "Untuk mengatur koneksi internet", "Untuk menyimpan data user", "Untuk mengganti tema aplikasi"], "answer": "Sebagai blueprint untuk method atau property yang harus diimplementasikan"},
+        {"q": "Istilah untuk sebuah class yang mewarisi sifat dari class lain adalah...", "options": ["Superclass", "Subclass", "Rootclass", "Baseclass"], "answer": "Subclass"},
+        {"q": "Manakah yang merupakan pilar utama OOP?", "options": ["Encapsulation, Inheritance, Polymorphism, Abstraction", "Array, List, Set, Dictionary", "Swift, Objective-C, Java, Python", "Variables, Functions, Loops, Conditions"], "answer": "Encapsulation, Inheritance, Polymorphism, Abstraction"},
+        {"q": "Apa yang dimaksud dengan 'Optional Chaining'?", "options": ["Proses menyambungkan beberapa kabel", "Proses pemanggilan property/method pada optional yang mungkin bernilai nil", "Looping di dalam optional", "Cara menghapus variabel optional"], "answer": "Proses pemanggilan property/method pada optional yang mungkin bernilai nil"},
+        {"q": "Apa fungsi dari keyword 'self'?", "options": ["Merujuk pada instance dari class/struct itu sendiri", "Menutup aplikasi", "Membuat salinan class", "Mencetak nama variabel"], "answer": "Merujuk pada instance dari class/struct itu sendiri"}
+    ],
+
+    "Section 4: Bonus (Design/UX)": [
+        {"q": "Prinsip utama Apple dalam UI Design adalah HIG. Apa singkatannya?", "options": ["High Interface Guide", "Human Interface Guidelines", "Helpful Interface Graphics", "Human Integrated Goal"], "answer": "Human Interface Guidelines"},
+        {"q": "Fitur paling krusial untuk aplikasi booking coworking space adalah...", "options": ["Filter harga & fasilitas", "Background warna-warni", "Animasi berat", "Chat bot"], "answer": "Filter harga & fasilitas"},
+        {"q": "Dalam desain UI, apa yang dimaksud dengan 'Affordance'?", "options": ["Biaya pembuatan desain", "Petunjuk visual yang menunjukkan cara penggunaan suatu objek", "Kecepatan loading gambar", "Warna yang mencolok"], "answer": "Petunjuk visual yang menunjukkan cara penggunaan suatu objek"},
+        {"q": "Mana yang merupakan prinsip desain 'Consistency' menurut Apple?", "options": ["Menggunakan font yang berbeda di setiap halaman", "Menggunakan simbol dan gaya yang sama di seluruh aplikasi", "Mengubah posisi menu utama sesuka hati", "Menghapus tombol navigasi"], "answer": "Menggunakan simbol dan gaya yang sama di seluruh aplikasi"},
+        {"q": "Apa tujuan utama dari 'User Research' sebelum membuat aplikasi?", "options": ["Menentukan harga aplikasi", "Memahami kebutuhan, perilaku, dan masalah pengguna", "Mencari investor", "Menghitung jumlah baris kodingan"], "answer": "Memahami kebutuhan, perilaku, dan masalah pengguna"},
+        {"q": "Apa itu 'Dark Mode' dalam konteks UX?", "options": ["Aplikasi hanya bisa dibuka malam hari", "Skema warna gelap yang mengurangi kelelahan mata", "Mode aplikasi saat tidak ada internet", "Fitur untuk menyembunyikan data"], "answer": "Skema warna gelap yang mengurangi kelelahan mata"},
+        {"q": "Prinsip 'Feedback' dalam UI berarti...", "options": ["Memberi tahu user hasil dari aksi yang mereka lakukan", "Meminta rating di App Store setiap menit", "Menghubungi customer service", "Menunggu balasan email"], "answer": "Memberi tahu user hasil dari aksi yang mereka lakukan"},
+        {"q": "Apa yang dimaksud dengan 'Accessibility' (Aksesibilitas) pada aplikasi?", "options": ["Kemudahan akses download", "Desain yang bisa digunakan oleh semua orang, termasuk penyandang disabilitas", "Keamanan kata sandi", "Ukuran file yang kecil"], "answer": "Desain yang bisa digunakan oleh semua orang, termasuk penyandang disabilitas"},
+        {"q": "Dalam prinsip Apple, 'Clarity' berarti...", "options": ["Teks harus bisa dibaca dan ikon harus bermakna jelas", "Layar harus sangat terang", "Aplikasi harus transparan", "Menggunakan banyak gambar dekoratif"], "answer": "Teks harus bisa dibaca dan ikon harus bermakna jelas"},
+        {"q": "Mana yang merupakan contoh 'Bad UX'?", "options": ["Navigasi yang mudah ditemukan", "Tombol yang terlalu kecil dan sulit diklik", "Waktu loading yang cepat", "Bahasa yang mudah dimengerti"], "answer": "Tombol yang terlalu kecil dan sulit diklik"}
+    ]
+    
+}
